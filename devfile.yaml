@@ -16,6 +16,15 @@ components:
       value: "/projects/devhub-plugin/workspace.code-workspace"
     - name: GOPATH
       value: /projects/home/go
+    endpoints:
+    - name: devhub-local
+      protocol: https
+      targetPort: 3000
+      exposure: public
+    - name: devhub-backend
+      protocol: https
+      targetPort: 7007
+      exposure: public
 - volume:
     size: 10Gi
   name: projects
