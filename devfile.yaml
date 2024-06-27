@@ -17,8 +17,12 @@ components:
     - name: GOPATH
       value: /projects/home/go
     endpoints:
-    - name: devhub-local
-      protocol: https
+    # - name: devhub-local
+    #   protocol: https
+    #   targetPort: 3000
+    #   exposure: public
+    - name: devhub-local-ins
+      protocol: http
       targetPort: 3000
       exposure: public
     - name: devhub-backend
