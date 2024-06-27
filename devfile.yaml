@@ -21,11 +21,11 @@ components:
     #   protocol: https
     #   targetPort: 3000
     #   exposure: public
-    - name: devhub-local-ins
+    - name: frontend
       protocol: http
       targetPort: 3000
       exposure: public
-    - name: devhub-backend
+    - name: backend
       protocol: https
       targetPort: 7007
       exposure: public
