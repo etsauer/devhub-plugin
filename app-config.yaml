@@ -1,6 +1,6 @@
 app:
-  title: Scaffolded Backstage App
-  baseUrl: http://user1-empty-ny0d-devhub-local-ins.apps.cluster-l488q.sandbox1189.opentlc.com
+  title: Red Hat Developer Hub Plugin Development
+  baseUrl: http://user1-devhub-plugin-development-frontend.apps.cluster-l488q.sandbox1189.opentlc.com
   listen:
     port: 3000
     host: 0.0.0.0
@@ -15,7 +15,7 @@ backend:
   # auth:
   #   keys:
   #     - secret: ${BACKEND_SECRET}
-  baseUrl: https://user1-empty-ny0d-devhub-backend.apps.cluster-l488q.sandbox1189.opentlc.com
+  baseUrl: https://user1-devhub-plugin-development-backend.apps.cluster-l488q.sandbox1189.opentlc.com
   listen:
     port: 7007
     # Uncomment the following host directive to bind to specific interfaces
@@ -25,7 +25,7 @@ backend:
     # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
     # Default Helmet Content-Security-Policy values can be removed by setting the key to false
   cors:
-    origin: [http://user1-empty-ny0d-devhub-local-ins.apps.cluster-l488q.sandbox1189.opentlc.com, https://user1-empty-ny0d-devhub-local-ins.apps.cluster-l488q.sandbox1189.opentlc.com]
+    origin: [http://user1-devhub-plugin-development-frontend.apps.cluster-l488q.sandbox1189.opentlc.com, http://user1-devhub-plugin-development-frontend.apps.cluster-l488q.sandbox1189.opentlc.com]
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
     credentials: true
   # This is for local development only, it is not recommended to use this in production
