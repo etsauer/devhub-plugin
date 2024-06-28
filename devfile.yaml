@@ -16,13 +16,11 @@ components:
       value: "/projects/devhub-plugin/workspace.code-workspace"
     - name: GOPATH
       value: /projects/home/go
+    # - name: NPM_CONFIG_PREFIX
+    #   value: /projects/node_modules
     endpoints:
-    # - name: devhub-local
-    #   protocol: https
-    #   targetPort: 3000
-    #   exposure: public
     - name: frontend
-      protocol: http
+      protocol: https
       targetPort: 3000
       exposure: public
     - name: backend

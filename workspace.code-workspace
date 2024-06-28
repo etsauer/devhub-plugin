@@ -1,11 +1,12 @@
 {
-    "folders": [
+	"folders": [
 		{
-        "path": "."
-        },
-    ],
-    "settings": {
-        "editor.wordWrap": "on",
-        "files.autoSave": "off"
-    }
+			"name": "devhub-plugin",
+			"path": "/projects/devhub-plugin"
+		}
+	],
+	"settings": {
+		"editor.wordWrap": "on",
+		"files.autoSave": "off"
+	}
 }
