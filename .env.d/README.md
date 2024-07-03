@@ -1,0 +1,1 @@
+Any environment variables defined in ".sh" files in this directory will be loaded by the terminal
