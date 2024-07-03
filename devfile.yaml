@@ -47,6 +47,16 @@ commands:
     component: oc-cli
     label: Copy OpenShift CLI
   id: cp-oc-cli
+- exec:
+    commandLine: for e in $(find $PROJECTS_ROOT -mindepth 1 -maxdepth 2 -type d -name '.env.d'); do echo ". $e/*.sh" >> ~/.bashrc && echo ". $e/*.sh" >> ~/.zshrc; done
+    component: dev-tools
+    hotReloadCapable: true
+    group:
+      isDefault: true
+      kind: run
+    label: Load env vars from projects
+    workingDir: '/projects'
+  id: load-project-envs
 events:
   preStart:
     - cp-oc-cli
