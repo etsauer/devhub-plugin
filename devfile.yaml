@@ -60,4 +60,5 @@ commands:
 events:
   preStart:
     - cp-oc-cli
+  postStart:
     - load-project-envs
