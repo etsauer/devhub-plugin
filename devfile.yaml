@@ -6,7 +6,7 @@ metadata:
 components:
 - name: dev-tools
   container:
-    image: quay.io/redhat-cop/devspaces-nodejs-18:latest
+    image: quay.io/redhat-cop/devspaces-nodejs-20:latest
     memoryLimit: 6Gi
     mountSources: true
     env:
@@ -60,3 +60,4 @@ commands:
 events:
   preStart:
     - cp-oc-cli
+    - load-project-envs
